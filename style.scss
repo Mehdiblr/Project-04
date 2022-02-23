@@ -1,0 +1,120 @@
+    // Scss Coded by Mehdi
+    // Variables
+    //Mixin
+    @mixin Button {
+        border: 1px solid blue;
+        background-color: #0068d2;
+        padding: 1rem 1.6rem;
+        border-radius: 3px;
+        color: white;
+    }
+    
+    .pos-relative {
+        position: relative;
+    }
+    
+    .pos-abs {
+        position: absolute
+    }
+    
+    .d-flex {
+        display: flex;
+    }
+    
+    .direction-row {
+        flex-direction: row;
+    }
+    
+    .jcontent-between {
+        justify-content: space-between;
+    }
+    
+    .aitems-center {
+        align-items: center;
+    }
+    
+    .w50 {
+        width: 50%
+    }
+    
+    //Custom
+    // Body
+    body {
+        margin: 5px auto;
+        width: 85vw;
+        header {
+            .logo>img {
+                height: 70px;
+            }
+            nav {
+                width: 40%;
+                ul {
+                    li {
+                        list-style: none;
+                        font-size: 1.4rem;
+                        a {
+                            text-decoration: none;
+                            color: darkblue;
+                        }
+                    }
+                }
+            }
+            .contact-us button {
+                @include Button;
+            }
+        }
+        section.top-page {
+            .left-content h4 {
+                font-size: 8rem;
+                margin-bottom: 5px;
+            }
+            .left-content p {
+                font-size: 2rem;
+                margin-bottom: 10px;
+            }
+            .order-up {
+                button {
+                    @include Button;
+                    margin-bottom: 5px;
+                }
+            }
+            .right-content {
+                background-image: url("assets/img/top-header.png");
+                background-repeat: no-repeat;
+                background-position: right center;
+                .top-cart {
+                    width: 100px;
+                    height: 115px;
+                    background-color: darkorange;
+                    border-radius: 5px;
+                    padding: 27px;
+                    font-size: 2.7rem;
+                    color: white;
+                    transform: rotate(-30deg);
+                    top: 15px;
+                    left: 222px;
+                }
+                .bottom-cart {
+                    width: 80px;
+                    height: 77px;
+                    background-color: #ef00ff;
+                    border-radius: 5px;
+                    bottom: 0;
+                    color: white;
+                    font-size: 1.6rem;
+                    padding: 7px;
+                    left: 240px;
+                    transform: rotate(20deg);
+                    bottom: 13px;
+                }
+                .click-icon {
+                    background: url("assets/img/click\ icon.png");
+                    width: 80px;
+                    height: 80px;
+                    background-repeat: no-repeat;
+                    left: -246px;
+                    top: 123px;
+                }
+            }
+        }
+    }

@@ -1,0 +1,131 @@
+.pos-relative {
+  position: relative;
+}
+
+.pos-abs {
+  position: absolute;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.direction-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.jcontent-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aitems-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.w50 {
+  width: 50%;
+}
+
+body {
+  margin: 5px auto;
+  width: 85vw;
+}
+
+body header .logo > img {
+  height: 70px;
+}
+
+body header nav {
+  width: 40%;
+}
+
+body header nav ul li {
+  list-style: none;
+  font-size: 1.4rem;
+}
+
+body header nav ul li a {
+  text-decoration: none;
+  color: darkblue;
+}
+
+body header .contact-us button {
+  border: 1px solid blue;
+  background-color: #0068d2;
+  padding: 1rem 1.6rem;
+  border-radius: 3px;
+  color: white;
+}
+
+body section.top-page .left-content h4 {
+  font-size: 8rem;
+  margin-bottom: 5px;
+}
+
+body section.top-page .left-content p {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+body section.top-page .order-up button {
+  border: 1px solid blue;
+  background-color: #0068d2;
+  padding: 1rem 1.6rem;
+  border-radius: 3px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+body section.top-page .right-content {
+  background-image: url("assets/img/top-header.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+body section.top-page .right-content .top-cart {
+  width: 100px;
+  height: 115px;
+  background-color: darkorange;
+  border-radius: 5px;
+  padding: 27px;
+  font-size: 2.7rem;
+  color: white;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  top: 15px;
+  left: 222px;
+}
+
+body section.top-page .right-content .bottom-cart {
+  width: 80px;
+  height: 77px;
+  background-color: #ef00ff;
+  border-radius: 5px;
+  bottom: 0;
+  color: white;
+  font-size: 1.6rem;
+  padding: 7px;
+  left: 240px;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  bottom: 13px;
+}
+
+body section.top-page .right-content .click-icon {
+  background: url("assets/img/click icon.png");
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  left: -246px;
+  top: 123px;
+}
+/*# sourceMappingURL=style.css.map */
