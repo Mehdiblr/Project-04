@@ -1,3 +1,7 @@
+section {
+  margin-bottom: 8rem;
+}
+
 .pos-relative {
   position: relative;
 }
@@ -66,17 +70,17 @@ body header .contact-us button {
   color: white;
 }
 
-body section.top-page .left-content h4 {
+body #top-page .left-content h4 {
   font-size: 8rem;
   margin-bottom: 5px;
 }
 
-body section.top-page .left-content p {
+body #top-page .left-content p {
   font-size: 2rem;
   margin-bottom: 10px;
 }
 
-body section.top-page .order-up button {
+body #top-page .order-up button {
   border: 1px solid blue;
   background-color: #0068d2;
   padding: 1rem 1.6rem;
@@ -85,13 +89,13 @@ body section.top-page .order-up button {
   margin-bottom: 5px;
 }
 
-body section.top-page .right-content {
+body #top-page .right-content {
   background-image: url("assets/img/top-header.png");
   background-repeat: no-repeat;
   background-position: right center;
 }
 
-body section.top-page .right-content .top-cart {
+body #top-page .right-content .top-cart {
   width: 100px;
   height: 115px;
   background-color: darkorange;
@@ -105,7 +109,7 @@ body section.top-page .right-content .top-cart {
   left: 222px;
 }
 
-body section.top-page .right-content .bottom-cart {
+body #top-page .right-content .bottom-cart {
   width: 80px;
   height: 77px;
   background-color: #ef00ff;
@@ -120,12 +124,51 @@ body section.top-page .right-content .bottom-cart {
   bottom: 13px;
 }
 
-body section.top-page .right-content .click-icon {
+body #top-page .right-content .click-icon {
   background: url("assets/img/click icon.png");
   width: 80px;
   height: 80px;
   background-repeat: no-repeat;
   left: -246px;
   top: 123px;
+}
+
+body #our-process div {
+  text-align: center;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  margin: 0 3rem;
+}
+
+body #our-process div img {
+  margin: 1rem auto;
+}
+
+body #our-process div h4 {
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+
+body #our-process div p {
+  color: #9c9a9a;
+  font-size: 1.2rem;
+}
+
+body #our-process .our-information h4 {
+  font-size: 4rem;
+}
+
+body #our-process .daily-standup {
+  background-color: #fee8c1;
+  -webkit-box-shadow: 27px 30px 60px 20px #00000026;
+          box-shadow: 27px 30px 60px 20px #00000026;
+}
+
+body #our-process .weekly-meet {
+  background-color: #c1f0fe;
+}
+
+body #our-process .user-test {
+  background-color: #d6fec1;
 }
 /*# sourceMappingURL=style.css.map */
