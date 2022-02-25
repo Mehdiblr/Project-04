@@ -80,6 +80,10 @@ section {
   width: 50% !important;
 }
 
+.w40 {
+  width: 40% !important;
+}
+
 .w30 {
   width: 30%;
 }
@@ -92,9 +96,14 @@ section {
   margin-bottom: 1rem;
 }
 
+.bg-sec2 {
+  background: linear-gradient(135deg, #d5d5d5 0%, #ffffff 100%);
+}
+
 #container {
-  margin: 5px auto;
+  margin: 0px auto;
   width: 85vw;
+  padding: 1rem 2rem;
 }
 
 #container header .logo > img {
@@ -275,5 +284,21 @@ section {
 
 .web-features {
   padding: 1rem 0;
+}
+
+#sign-up .left-text h4 {
+  margin-bottom: 1rem;
+}
+
+#sign-up .left-text p {
+  margin-bottom: 1rem;
+}
+
+#sign-up .left-text button {
+  border: 1px solid blue;
+  background-color: #0068d2;
+  padding: 1rem 1.6rem;
+  border-radius: 3px;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

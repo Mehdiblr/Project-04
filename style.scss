@@ -73,6 +73,10 @@
         width: 50% !important;
     }
     
+    .w40 {
+        width: 40% !important;
+    }
+    
     .w30 {
         width: 30%;
     }
@@ -85,11 +89,16 @@
         margin-bottom: 1rem;
     }
     
+    .bg-sec2 {
+        background: linear-gradient(135deg, #d5d5d5 0%, #ffffff 100%);
+    }
+    
     //Custom
     // Body
     #container {
-        margin: 5px auto;
+        margin: 0px auto;
         width: 85vw;
+        padding: 1rem 2rem;
         header {
             .logo>img {
                 height: 70px;
@@ -214,7 +223,6 @@
             background-color: #fff;
             height: 320px;
             padding: 1rem 4rem;
-            .feature-options {}
         }
     }
     
@@ -249,6 +257,18 @@
     
     .web-features {
         padding: 1rem 0;
-        .left-features {}
-        .right-image {}
+    }
+    
+    #sign-up {
+        .left-text {
+            h4 {
+                margin-bottom: 1rem
+            }
+            p {
+                margin-bottom: 1rem
+            }
+            button {
+                @include Button;
+            }
+        }
     }
