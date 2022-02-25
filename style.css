@@ -88,6 +88,10 @@ section {
   width: 30%;
 }
 
+.w25p {
+  width: 25% !important;
+}
+
 .cEEE {
   color: #a6a6a6;
 }
@@ -300,5 +304,34 @@ section {
   padding: 1rem 1.6rem;
   border-radius: 3px;
   color: white;
+}
+
+footer#footer div {
+  padding: 0 1rem;
+}
+
+footer#footer form button {
+  right: 14px;
+  top: 28px;
+  outline: none;
+  padding: 0.7rem;
+  border: 0;
+  background-color: mediumpurple;
+  color: white;
+  border-radius: 3px;
+}
+
+footer#footer form input[type=text] {
+  outline: none;
+  border: 1px solid blue;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 3px;
+}
+
+footer#footer ul li {
+  list-style: none;
+  padding-top: 2rem;
+  font-size: 1.4rem;
 }
 /*# sourceMappingURL=style.css.map */
