@@ -1,5 +1,5 @@
 section {
-  margin-bottom: 8rem;
+  margin-bottom: 14rem;
 }
 
 .pos-relative {
@@ -23,10 +23,35 @@ section {
           flex-direction: row;
 }
 
+.direction-coloumn {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .jcontent-between {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.jcontent-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.jcontent-start {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.aitems-start {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .aitems-center {
@@ -35,34 +60,62 @@ section {
           align-items: center;
 }
 
-.w50 {
-  width: 50%;
+.f1rem {
+  font-size: 1rem !important;
 }
 
-body {
+.f2rem {
+  font-size: 2rem !important;
+}
+
+.f3rem {
+  font-size: 3rem !important;
+}
+
+.f4rem {
+  font-size: 4rem !important;
+}
+
+.w50 {
+  width: 50% !important;
+}
+
+.w30 {
+  width: 30%;
+}
+
+.cEEE {
+  color: #a6a6a6;
+}
+
+.mb1rem {
+  margin-bottom: 1rem;
+}
+
+#container {
   margin: 5px auto;
   width: 85vw;
 }
 
-body header .logo > img {
+#container header .logo > img {
   height: 70px;
 }
 
-body header nav {
+#container header nav {
   width: 40%;
 }
 
-body header nav ul li {
+#container header nav ul li {
   list-style: none;
   font-size: 1.4rem;
 }
 
-body header nav ul li a {
+#container header nav ul li a {
   text-decoration: none;
   color: darkblue;
 }
 
-body header .contact-us button {
+#container header .contact-us button {
   border: 1px solid blue;
   background-color: #0068d2;
   padding: 1rem 1.6rem;
@@ -70,17 +123,17 @@ body header .contact-us button {
   color: white;
 }
 
-body #top-page .left-content h4 {
+#container #top-page .left-content h4 {
   font-size: 8rem;
   margin-bottom: 5px;
 }
 
-body #top-page .left-content p {
+#container #top-page .left-content p {
   font-size: 2rem;
   margin-bottom: 10px;
 }
 
-body #top-page .order-up button {
+#container #top-page .order-up button {
   border: 1px solid blue;
   background-color: #0068d2;
   padding: 1rem 1.6rem;
@@ -89,13 +142,13 @@ body #top-page .order-up button {
   margin-bottom: 5px;
 }
 
-body #top-page .right-content {
+#container #top-page .right-content {
   background-image: url("assets/img/top-header.png");
   background-repeat: no-repeat;
   background-position: right center;
 }
 
-body #top-page .right-content .top-cart {
+#container #top-page .right-content .top-cart {
   width: 100px;
   height: 115px;
   background-color: darkorange;
@@ -109,7 +162,7 @@ body #top-page .right-content .top-cart {
   left: 222px;
 }
 
-body #top-page .right-content .bottom-cart {
+#container #top-page .right-content .bottom-cart {
   width: 80px;
   height: 77px;
   background-color: #ef00ff;
@@ -124,7 +177,7 @@ body #top-page .right-content .bottom-cart {
   bottom: 13px;
 }
 
-body #top-page .right-content .click-icon {
+#container #top-page .right-content .click-icon {
   background: url("assets/img/click icon.png");
   width: 80px;
   height: 80px;
@@ -133,42 +186,94 @@ body #top-page .right-content .click-icon {
   top: 123px;
 }
 
-body #our-process div {
+#container #our-process div {
   text-align: center;
   border-radius: 10px;
   padding: 1rem 2rem;
   margin: 0 3rem;
 }
 
-body #our-process div img {
+#container #our-process div img {
   margin: 1rem auto;
 }
 
-body #our-process div h4 {
+#container #our-process div h4 {
   margin: 1rem 0;
   font-size: 2rem;
 }
 
-body #our-process div p {
+#container #our-process div p {
   color: #9c9a9a;
   font-size: 1.2rem;
 }
 
-body #our-process .our-information h4 {
+#container #our-process .our-information h4 {
   font-size: 4rem;
 }
 
-body #our-process .daily-standup {
+#container #our-process .daily-standup {
   background-color: #fee8c1;
   -webkit-box-shadow: 27px 30px 60px 20px #00000026;
           box-shadow: 27px 30px 60px 20px #00000026;
 }
 
-body #our-process .weekly-meet {
+#container #our-process .weekly-meet {
   background-color: #c1f0fe;
 }
 
-body #our-process .user-test {
+#container #our-process .user-test {
   background-color: #d6fec1;
+}
+
+#features {
+  background-color: #f2fcff;
+}
+
+#features .left-mobile {
+  background: url(assets/img/feature-phone.png);
+  width: 200px;
+  height: 370px;
+  background-repeat: no-repeat;
+  margin-top: -5rem;
+}
+
+#features .right-information {
+  background-color: #fff;
+  height: 320px;
+  padding: 1rem 4rem;
+}
+
+#customize div.left-image {
+  width: 350px;
+  height: 268px;
+}
+
+#customize div.left-image img {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#customize div.right-information div {
+  padding: 2rem 4rem;
+  background: #FFF;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border-left: 3px solid;
+}
+
+#customize div.right-information .red-corner {
+  border-left-color: #f83636;
+}
+
+#customize div.right-information .blue-corner {
+  border-left-color: #3672f8;
+}
+
+#customize div.right-information .green-corner {
+  border-left-color: #4bf836;
+}
+
+.web-features {
+  padding: 1rem 0;
 }
 /*# sourceMappingURL=style.css.map */

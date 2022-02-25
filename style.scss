@@ -10,7 +10,7 @@
     }
     
     section {
-        margin-bottom: 8rem;
+        margin-bottom: 14rem;
     }
     
     .pos-relative {
@@ -29,21 +29,65 @@
         flex-direction: row;
     }
     
+    .direction-coloumn {
+        flex-direction: column;
+    }
+    
     .jcontent-between {
         justify-content: space-between;
+    }
+    
+    .jcontent-center {
+        justify-content: center;
+    }
+    
+    .jcontent-start {
+        justify-content: flex-start;
+    }
+    
+    .aitems-start {
+        align-items: flex-start;
     }
     
     .aitems-center {
         align-items: center;
     }
     
+    .f1rem {
+        font-size: 1rem !important;
+    }
+    
+    .f2rem {
+        font-size: 2rem !important;
+    }
+    
+    .f3rem {
+        font-size: 3rem !important;
+    }
+    
+    .f4rem {
+        font-size: 4rem !important;
+    }
+    
     .w50 {
-        width: 50%
+        width: 50% !important;
+    }
+    
+    .w30 {
+        width: 30%;
+    }
+    
+    .cEEE {
+        color: #a6a6a6;
+    }
+    
+    .mb1rem {
+        margin-bottom: 1rem;
     }
     
     //Custom
     // Body
-    body {
+    #container {
         margin: 5px auto;
         width: 85vw;
         header {
@@ -155,4 +199,56 @@
                 background-color: #d6fec1;
             }
         }
+    }
+    
+    #features {
+        background-color: #f2fcff;
+        .left-mobile {
+            background: url(assets/img/feature-phone.png);
+            width: 200px;
+            height: 370px;
+            background-repeat: no-repeat;
+            margin-top: -5rem;
+        }
+        .right-information {
+            background-color: #fff;
+            height: 320px;
+            padding: 1rem 4rem;
+            .feature-options {}
+        }
+    }
+    
+    #customize {
+        div.left-image {
+            width: 350px;
+            height: 268px;
+            img {
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+        div.right-information {
+            div {
+                padding: 2rem 4rem;
+                background: #FFF;
+                margin-bottom: 1rem;
+                border-radius: 8px;
+                border-left: 3px solid;
+            }
+            .red-corner {
+                border-left-color: #f83636;
+            }
+            .blue-corner {
+                border-left-color: #3672f8;
+            }
+            .green-corner {
+                border-left-color: #4bf836;
+            }
+        }
+    }
+    
+    .web-features {
+        padding: 1rem 0;
+        .left-features {}
+        .right-image {}
     }
