@@ -2,6 +2,10 @@ section {
   margin-bottom: 14rem;
 }
 
+p {
+  color: #323232;
+}
+
 .pos-relative {
   position: relative;
 }
@@ -126,6 +130,17 @@ section {
 #container header nav ul li a {
   text-decoration: none;
   color: darkblue;
+  padding-bottom: 1rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#container header nav ul li a:hover {
+  text-decoration: none;
+  color: darkblue;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  border-bottom: 1px solid blue;
 }
 
 #container header .contact-us button {
@@ -134,16 +149,60 @@ section {
   padding: 1rem 1.6rem;
   border-radius: 3px;
   color: white;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+#container header .contact-us button::before {
+  content: "";
+  top: 0.5rem;
+  left: 0px;
+  background-color: #c1f0fe;
+  position: absolute;
+  width: 2rem;
+  height: 3.2rem;
+  visibility: hidden;
+  z-index: -9999999;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#container header .contact-us button:hover {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-box-shadow: inset 0px 3px 2px darkblue;
+          box-shadow: inset 0px 3px 2px darkblue;
+  border: 1px solid darkblue;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+}
+
+#container header .contact-us button:hover::before {
+  content: "";
+  top: 0.5rem;
+  left: 0;
+  background: #eee;
+  position: absolute;
+  width: 100%;
+  height: 3.2rem;
+  visibility: visible;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+#container #top-page {
+  margin-top: 3rem;
 }
 
 #container #top-page .left-content h4 {
   font-size: 8rem;
-  margin-bottom: 5px;
+  margin-bottom: 2rem;
 }
 
 #container #top-page .left-content p {
   font-size: 2rem;
-  margin-bottom: 10px;
+  margin-bottom: 2rem;
 }
 
 #container #top-page .order-up button {
@@ -153,6 +212,22 @@ section {
   border-radius: 3px;
   color: white;
   margin-bottom: 5px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  padding: 1.4rem 0;
+  font-size: 2rem;
+}
+
+#container #top-page .order-up button:hover {
+  background-color: transparent;
+  color: black;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#container #top-page .order-up span {
+  font-size: 2rem;
 }
 
 #container #top-page .right-content {
@@ -191,12 +266,20 @@ section {
 }
 
 #container #top-page .right-content .click-icon {
-  background: url("assets/img/click icon.png");
-  width: 80px;
-  height: 80px;
-  background-repeat: no-repeat;
   left: -246px;
   top: 123px;
+  padding: 1.5rem;
+  background-color: green;
+  border-radius: 50%;
+}
+
+#container #top-page .right-content .circle-icon {
+  left: -256px;
+  top: 150px;
+  padding: 1.5rem;
+  background-color: red;
+  border-radius: 50%;
+  mix-blend-mode: multiply;
 }
 
 #container #our-process div {
@@ -213,10 +296,11 @@ section {
 #container #our-process div h4 {
   margin: 1rem 0;
   font-size: 2rem;
+  font-weight: 700;
 }
 
 #container #our-process div p {
-  color: #9c9a9a;
+  padding-bottom: 2rem;
   font-size: 1.2rem;
 }
 
@@ -225,35 +309,150 @@ section {
 }
 
 #container #our-process .daily-standup {
-  background-color: #fee8c1;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  background-color: #fff;
   -webkit-box-shadow: 27px 30px 60px 20px #00000026;
           box-shadow: 27px 30px 60px 20px #00000026;
 }
 
+#container #our-process .daily-standup i {
+  padding: 1rem 1.5rem;
+  background-color: orange;
+  border-radius: 0.4rem;
+  font-size: 4rem;
+}
+
+#container #our-process .daily-standup:hover {
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  background-color: #fee8c1;
+  border-bottom: 10px solid orange;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 #container #our-process .weekly-meet {
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  background-color: #fff;
+}
+
+#container #our-process .weekly-meet i {
+  padding: 1rem 1.5rem;
+  background-color: #00c4ff;
+  border-radius: 0.4rem;
+  font-size: 4rem;
+}
+
+#container #our-process .weekly-meet:hover {
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  border-bottom: 10px solid #00c4ff;
+  transition: all 0.8s;
   background-color: #c1f0fe;
 }
 
 #container #our-process .user-test {
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  background-color: #fff;
+}
+
+#container #our-process .user-test i {
+  padding: 1rem 1.5rem;
+  background-color: #58ff00;
+  border-radius: 0.4rem;
+  font-size: 4rem;
+}
+
+#container #our-process .user-test:hover {
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  border-bottom: 10px solid #58ff00;
+  transition: all 0.8s;
   background-color: #d6fec1;
 }
 
 #features {
-  background-color: #f2fcff;
+  height: 500px;
+  background: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 3px 0px #a6a6a6;
+          box-shadow: 0 0 3px 0px #a6a6a6;
 }
 
 #features .left-mobile {
   background: url(assets/img/feature-phone.png);
-  width: 200px;
+  width: 270px;
   height: 370px;
   background-repeat: no-repeat;
-  margin-top: -5rem;
+  background-size: cover;
 }
 
 #features .right-information {
   background-color: #fff;
-  height: 320px;
-  padding: 1rem 4rem;
+  padding: 1rem 2rem;
+  border-radius: 0.3rem;
+}
+
+#features .right-information .feature-options {
+  width: 100%;
+}
+
+#features .right-information > p:nth-child(3) {
+  font-size: 1.4rem;
+  padding-bottom: 3rem;
+}
+
+#features .right-information h3 {
+  font-size: 5rem;
+}
+
+#features .right-information .user-experience h3 {
+  font-size: 1.5rem;
+}
+
+#features .right-information .user-experience p {
+  font-size: 1.3rem;
+}
+
+#features .right-information .user-experience i {
+  padding: 1rem;
+  background-color: aquamarine;
+  border-radius: 0.3rem;
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
+  background: linear-gradient(135deg, #5b247a 0%, #1bcedf 100%);
+  color: #fff;
+}
+
+#features .right-information .ios-design h3 {
+  font-size: 1.5rem;
+}
+
+#features .right-information .ios-design p {
+  font-size: 1.3rem;
+}
+
+#features .right-information .ios-design i {
+  padding: 1rem;
+  background-color: aquamarine;
+  border-radius: 0.3rem;
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
+  background: linear-gradient(135deg, #5b247a 0%, #1bcedf 100%);
+  color: #fff;
+}
+
+#customize {
+  background: linear-gradient(135deg, #f1f1f1 0%, #ffffff 100%);
+  border-radius: 5px;
+  padding: 10rem 0;
+  -webkit-box-shadow: 0 0 3px 0px #a6a6a6;
+          box-shadow: 0 0 3px 0px #a6a6a6;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 #customize div.left-image {
@@ -266,12 +465,35 @@ section {
   background-repeat: no-repeat;
 }
 
+#customize div.left-image .half-circle {
+  width: 300px;
+  height: 300px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, yellow), color-stop(0%, transparent));
+  background: linear-gradient(to bottom, yellow 50%, transparent 0%);
+  -webkit-transform: rotate(164deg);
+          transform: rotate(164deg);
+  border-radius: 50%;
+  z-index: -1;
+  top: -25px;
+  right: 95px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+#customize div.left-image:hover .half-circle {
+  -webkit-transition: all 0.9s;
+  transition: all 0.9s;
+  background: yellow;
+}
+
 #customize div.right-information div {
   padding: 2rem 4rem;
   background: #FFF;
   margin-bottom: 1rem;
   border-radius: 8px;
   border-left: 3px solid;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 #customize div.right-information .red-corner {
@@ -286,8 +508,131 @@ section {
   border-left-color: #4bf836;
 }
 
-.web-features {
+#customize div.right-information div:first-child:hover {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  border: none;
+  border-bottom: 3px solid #f83636;
+  border-right: 3px solid #f83636;
+}
+
+#customize div.right-information div:nth-child(2):hover {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  border: none;
+  border-bottom: 3px solid #3672f8;
+  border-right: 3px solid #3672f8;
+}
+
+#customize div.right-information div:nth-child(3):hover {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  border: none;
+  border-bottom: 3px solid #4bf836;
+  border-right: 3px solid #4bf836;
+}
+
+#customize:hover {
+  background: #fff;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#customize:hover div.right-information div {
+  background: #efefef;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#web-features {
+  background: linear-gradient(135deg, #f1f1f1 0%, #ffffff 100%);
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 3px 0px #a6a6a6;
+          box-shadow: 0 0 3px 0px #a6a6a6;
+  padding: 10rem 8rem !important;
   padding: 1rem 0;
+}
+
+#web-features .left-features > p {
+  font-size: 1.4rem;
+  padding: 1rem 0 5rem 0;
+}
+
+#web-features .right-image img {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#web-features .right-image img:hover {
+  -webkit-box-shadow: 0 0 12px 1px black;
+          box-shadow: 0 0 12px 1px black;
+  border-radius: 15px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#web-features .developer-features .left-features > p {
+  font-size: 1rem;
+}
+
+#web-features .developer-features .user-experience {
+  width: 45%;
+}
+
+#web-features .developer-features .user-experience i {
+  padding: 2rem;
+  background-color: darkblue;
+  border-radius: 0.4rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 2rem;
+}
+
+#web-features .developer-features .user-experience h3 {
+  font-size: 1.6rem;
+  padding: 1rem 0 1rem;
+}
+
+#web-features .developer-features .user-experience p {
+  font-size: 1.4rem;
+}
+
+#web-features .developer-features .ios-design {
+  width: 45%;
+}
+
+#web-features .developer-features .ios-design i {
+  padding: 2rem;
+  background-color: darkorange;
+  border-radius: 0.4rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 2rem;
+}
+
+#web-features .developer-features .ios-design h3 {
+  font-size: 1.6rem;
+  padding: 1rem 0 1rem;
+}
+
+#web-features .developer-features .ios-design p {
+  font-size: 1.4rem;
+}
+
+#web-features:hover {
+  background: #fff;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#sign-up {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  padding: 8rem 2rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 3px 0px #a6a6a6;
+          box-shadow: 0 0 3px 0px #a6a6a6;
+  background: linear-gradient(135deg, #f1f1f1 0%, #ffffff 100%);
 }
 
 #sign-up .left-text h4 {
@@ -306,13 +651,44 @@ section {
   color: white;
 }
 
+#sign-up .right-image {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#sign-up .right-image > img {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+#sign-up:hover {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background: #fff;
+  transition: all 1s;
+}
+
+#sign-up:hover .right-image > img {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-filter: drop-shadow(2px 4px 6px black);
+          filter: drop-shadow(2px 4px 6px black);
+}
+
+footer#footer .logo p {
+  font-size: 1.4rem;
+  padding: 1rem 0rem;
+}
+
 footer#footer div {
-  padding: 0 1rem;
+  padding: 5rem 1rem;
 }
 
 footer#footer form button {
   right: 14px;
-  top: 28px;
+  top: 78px;
   outline: none;
   padding: 0.7rem;
   border: 0;
@@ -332,6 +708,7 @@ footer#footer form input[type=text] {
 footer#footer ul li {
   list-style: none;
   padding-top: 2rem;
+  text-decoration: underline;
   font-size: 1.4rem;
 }
 /*# sourceMappingURL=style.css.map */

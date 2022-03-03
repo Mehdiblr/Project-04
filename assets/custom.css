@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: width 1s;
+    transition: all 1s;
 }
 
 html {
@@ -11,4 +11,14 @@ html {
     font-size: 62.5%;
     scroll-behavior: smooth;
     min-height: 100vh;
+}
+
+body {
+    background: linear-gradient(135deg, #f1f1f1 0%, #ffffff 100%);
+}
+
+svg {
+    width: 100%;
+    position: absolute;
+    left: 0;
 }
