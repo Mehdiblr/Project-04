@@ -481,10 +481,6 @@
                         transition: all 1s;
                         border-radius: 15px;
                     }
-                    img:hover {
-                        box-shadow: 0 0 12px 1px black;
-                        transition: all 1s;
-                    }
                 }
                 .developer-features {
                     .left-features {
@@ -535,6 +531,12 @@
             #web-features:hover {
                 background: #fff;
                 transition: all 1s;
+                .right-image {
+                    img {
+                        box-shadow: 0 0 12px 1px black;
+                        transition: all 1s;
+                    }
+                }
             }
             
             #sign-up {

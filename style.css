@@ -564,13 +564,6 @@ p {
   border-radius: 15px;
 }
 
-#web-features .right-image img:hover {
-  -webkit-box-shadow: 0 0 12px 1px black;
-          box-shadow: 0 0 12px 1px black;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
 #web-features .developer-features .left-features > p {
   font-size: 1rem;
 }
@@ -621,6 +614,13 @@ p {
 
 #web-features:hover {
   background: #fff;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#web-features:hover .right-image img {
+  -webkit-box-shadow: 0 0 12px 1px black;
+          box-shadow: 0 0 12px 1px black;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
