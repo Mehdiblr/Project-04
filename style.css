@@ -135,12 +135,21 @@ p {
   transition: all 1s;
 }
 
+#container header nav ul li a i {
+  padding-left: 0.4rem;
+}
+
 #container header nav ul li a:hover {
   text-decoration: none;
   color: darkblue;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   border-bottom: 1px solid blue;
+}
+
+#container header nav ul li a:hover i {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 #container header .contact-us button {

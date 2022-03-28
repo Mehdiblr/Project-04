@@ -122,12 +122,18 @@
                                     color: darkblue;
                                     padding-bottom: 1rem;
                                     transition: all 1s;
+                                    i {
+                                        padding-left: 0.4rem;
+                                    }
                                 }
                                 a:hover {
                                     text-decoration: none;
                                     color: darkblue;
                                     transition: all 0.4s;
                                     border-bottom: 1px solid blue;
+                                    i {
+                                        transform: rotate(180deg)
+                                    }
                                 }
                             }
                         }
